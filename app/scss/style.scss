@@ -1,16 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
 
-// ### Primary
-
-// - Soft blue: hsl(215, 51%, 70%)
-// - Cyan: hsl(178, 100%, 50%)
-
-// ### Neutral
-
-// - Very dark blue (main BG): hsl(217, 54%, 11%)
-// - Very dark blue (card BG): hsl(216, 50%, 16%)
-// - Very dark blue (line): hsl(215, 32%, 27%)
-// - White: hsl(0, 0%, 100%)
 
 $dark-blue-main: hsl(217, 54%, 11%); 
 $dark-blue-card: hsl(216, 50%, 16%);
@@ -33,6 +22,7 @@ section{
     width: 100%;
    height: 100vh;
    display: grid;
+   
 
 }
 .card{
@@ -45,35 +35,51 @@ section{
     color: $soft-blue;
     border-radius: 1rem;
     padding: 1rem;
+    box-shadow: 0px 0px 30px #111111;
     
 }
-.card img{
+.image-container{
+    position: relative;
     width: 100%;
-    border-radius: .5rem;
-    margin: auto;
+   
+    
+
+}
+.image_img{
+    display: block;
+    width: 100%;
+    border-radius: 1rem;
+   
+}
+.image--overlay{
+    position: absolute;
+    top: 0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background:  rgba(0, 255, 247,0.5);
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+
+    
+
+
+}
+.image--overlay:hover{
+    opacity: 1;
 }
 
-.image:hover {
-        background-color: $cyan;
-        background-image: url("https://raw.githubusercontent.com/simplyJC/nft-preview-card-component-main/a8dafad0bee3bdbc0253054d6575f5d39c67c067/images/icon-view.svg");
-        background-position: center;
-        background-repeat: no-repeat;   
-        border-radius: .5rem;
-        opacity: $cyan;
-      
 
- }
-      
-img:hover  {
-        opacity: 0.5;
-         
-}
-.title{
+h1{
     padding: 1rem 0;
 }
 
-.title a{
+h1 a{
     color: $white;
     padding:1rem 0;
     font-weight: 700;
@@ -81,7 +87,7 @@ img:hover  {
   
 }
 
-.title a:hover{
+h1 a:hover{
     color: $cyan;
 
 }
@@ -138,12 +144,8 @@ img:hover  {
     color: $white; 
 }
 .avatar{
-    //border-radius: 500px;
-    
-    //background-color: #DDD;
-    border: 1px solid #cfd8dc;
+    border: 2px solid #cfd8dc;
     border-radius: 5rem;
-
 }
 hr{
     border: 1px solid $dark-blue-line;
@@ -155,7 +157,8 @@ p{
 .attribution { 
     font-size: 11px; text-align: center; 
     padding: 1rem 0; 
+    color:$soft-blue;
 }
 .attribution a {
-    color: hsl(228, 45%, 44%); 
+    color: $white; 
 }
