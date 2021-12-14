@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+// ### Primary
+
+// - Soft blue: hsl(215, 51%, 70%)
+// - Cyan: hsl(178, 100%, 50%)
+
+// ### Neutral
+
+// - Very dark blue (main BG): hsl(217, 54%, 11%)
+// - Very dark blue (card BG): hsl(216, 50%, 16%)
+// - Very dark blue (line): hsl(215, 32%, 27%)
+// - White: hsl(0, 0%, 100%)
+
+$dark-blue-main: hsl(217, 54%, 11%); 
+$dark-blue-card: hsl(216, 50%, 16%);
+$dark-blue-line: hsl(215, 32%, 27%);
+$white: hsl(0, 0%, 100%) ; 
+
+$soft-blue: hsl(215, 51%, 70%);
+$cyan: hsl(178, 100%, 50%);
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Outfit', sans-serif;
+    background: $dark-blue-main;
+}
+section{
+    width: 100%;
+   height: 100vh;
+   display: grid;
+
+}
+.card{
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    max-width: 370px;
+    background: $dark-blue-card;
+    color: $soft-blue;
+    border-radius: 1rem;
+    padding: 1rem;
+    
+}
+.card img{
+    width: 100%;
+    border-radius: .5rem;
+    margin: auto;
+    display: flex;
+}
+
+.image:hover {
+        background-image: url("/images/icon-view.svg");
+        background-position: center;
+        background-repeat: no-repeat;   
+        border-radius: .5rem;
+        background-color: $cyan;
+
+ }
+      
+img:hover  {
+        opacity: 0.5;
+         
+}
+.title{
+    padding: 1rem 0;
+}
+
+.title a{
+    color: $white;
+    padding:1rem 0;
+    font-weight: 700;
+    text-decoration: none;
+  
+}
+
+.title a:hover{
+    color: $cyan;
+
+}
+   
+.desc{
+    padding: 1rem 0;
+}
+.details{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+    
+}
+.value{
+    color: $cyan;
+    text-align: center;
+}
+.days{
+    text-align: center;
+}
+
+.details img{
+    width: 1rem;
+    height: 1rem;
+ 
+}
+.value{
+    display: flex;
+    align-items: center;
+}
+.days{
+    display: flex;
+    align-items: center;
+}
+.days span{
+    padding-left: .5rem;
+}
+
+.creator-name{
+    display: flex;
+    padding: 1rem 0; 
+    align-items: center;
+
+}
+
+.creator-name img{
+    width: 3rem;
+    margin:0; 
+}
+.creator-name span{
+    padding: 0 .5rem;
+}
+.name{
+    color: $white; 
+}
+.avatar{
+    //border-radius: 500px;
+    
+    //background-color: #DDD;
+    border: 1px solid #cfd8dc;
+    border-radius: 5rem;
+
+}
+hr{
+    border: 1px solid $dark-blue-line;
+}
+p{
+    color: $soft-blue; 
+}
+
+.attribution { 
+    font-size: 11px; text-align: center; 
+    padding: 1rem 0; 
+}
+.attribution a {
+    color: hsl(228, 45%, 44%); 
+}
