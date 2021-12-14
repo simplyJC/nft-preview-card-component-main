@@ -55,11 +55,13 @@ section{
 }
 
 .image:hover {
-        background-image: url("/images/icon-view.svg");
+        background-color: $cyan;
+        background-image: url("https://github.com/simplyJC/nft-preview-card-component-main/blob/master/images/icon-view.svg");
         background-position: center;
         background-repeat: no-repeat;   
         border-radius: .5rem;
-        background-color: $cyan;
+        opacity: $cyan;
+      
 
  }
       
