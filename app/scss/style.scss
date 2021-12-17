@@ -18,10 +18,12 @@ body{
     font-family: 'Outfit', sans-serif;
     background: $dark-blue-main;
 }
-section{
+main{
     width: 100%;
    height: 100vh;
    display: grid;
+   align-content: center;
+
    
 
 }
@@ -77,18 +79,23 @@ section{
 
 h1{
     padding: 1rem 0;
+    font-size: 1.5rem;
+
+    
+
 }
 
-h1 a{
+a{
     color: $white;
     padding:1rem 0;
-    font-weight: 700;
+    //font-weight: 700;
     text-decoration: none;
   
 }
-
-h1 a:hover{
+  
+a:hover{
     color: $cyan;
+
 
 }
    
